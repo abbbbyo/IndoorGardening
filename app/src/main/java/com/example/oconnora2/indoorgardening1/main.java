@@ -1,5 +1,8 @@
 package com.example.oconnora2.indoorgardening1;
 
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.DriverManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.content.Intent;
 
 public class main extends AppCompatActivity {
 
@@ -26,6 +31,19 @@ public class main extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void liveDataClick(View view) {
+        Intent startLive = new Intent(this, Live_Data.class);
+        startActivity(startLive);
+    }
+    public void historicalDataClick(View view) {
+        Intent startHistorical = new Intent(this, Historical_Data.class);
+        startActivity(startHistorical);
+    }
+    public void videoClick(View view) {
+        Intent startVideo = new Intent(this, Live_Video.class);
+        startActivity(startVideo);
     }
 
     @Override

@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.oconnora2.indoorgardening1">
 
-    <uses-feature android:name="android.hardware.type.watch" />
-
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -28,9 +25,6 @@
             android:label="@string/title_activity_historical__data"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <uses-library
-            android:name="com.google.android.wearable"
-            android:required="true" />
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
