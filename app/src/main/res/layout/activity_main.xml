@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -11,12 +11,12 @@
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
         android:text="@string/title_home"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="40dp" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -33,27 +33,34 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/live_data"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
         android:onClick="liveDataClick"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="105dp" />
+        android:text="@string/live_data"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="128dp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/historical_data"
+        android:layout_centerInParent="true"
         android:onClick="historicalDataClick"
+        android:text="@string/historical_data"
         tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="212dp" />
+        tools:layout_editor_absoluteY="225dp" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/video_data"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
         android:onClick="videoClick"
+        android:text="@string/video_data"
         tools:layout_editor_absoluteX="133dp"
         tools:layout_editor_absoluteY="320dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
